@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy – Splito</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: #f8fafc;
+      color: #1e293b;
+      line-height: 1.7;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1B4332 0%, #2D6A4F 60%, #40916C 100%);
+      color: #fff;
+      padding: 56px 24px 40px;
+      text-align: center;
+    }
+    header h1 { font-size: 2.2rem; font-weight: 800; letter-spacing: -0.5px; }
+    header p  { margin-top: 8px; font-size: 1rem; opacity: 0.85; }
+
+    .badge {
+      display: inline-block;
+      margin-top: 18px;
+      background: rgba(255,255,255,0.15);
+      border: 1px solid rgba(255,255,255,0.25);
+      border-radius: 999px;
+      padding: 4px 16px;
+      font-size: 0.8rem;
+      letter-spacing: 0.3px;
+    }
+
+    main {
+      max-width: 760px;
+      margin: 40px auto 80px;
+      padding: 0 24px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.07), 0 4px 16px rgba(0,0,0,0.05);
+      padding: 36px 40px;
+      margin-bottom: 24px;
+    }
+
+    .card h2 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #1B4332;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .card h2 .icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      background: #d1fae5;
+      font-size: 1rem;
+      flex-shrink: 0;
+    }
+
+    .card p  { margin-bottom: 12px; font-size: 0.97rem; color: #374151; }
+    .card p:last-child { margin-bottom: 0; }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 8px 0 12px;
+    }
+    ul li {
+      position: relative;
+      padding-left: 20px;
+      margin-bottom: 8px;
+      font-size: 0.97rem;
+      color: #374151;
+    }
+    ul li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: #40916C;
+      font-weight: 700;
+    }
+
+    .highlight {
+      background: #f0fdf4;
+      border-left: 4px solid #40916C;
+      border-radius: 0 8px 8px 0;
+      padding: 14px 18px;
+      margin: 16px 0;
+      font-size: 0.95rem;
+      color: #166534;
+    }
+
+    a { color: #2D6A4F; text-decoration: underline; }
+
+    footer {
+      text-align: center;
+      font-size: 0.82rem;
+      color: #94a3b8;
+      padding-bottom: 40px;
+    }
+    footer strong { color: #64748b; }
+
+    @media (max-width: 600px) {
+      .card { padding: 24px 20px; }
+      header h1 { font-size: 1.7rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Splito – Privacy Policy</h1>
+  <p>Your privacy is important to us. Here's exactly what we do (and don't do) with your data.</p>
+  <span class="badge">Last updated: May 2025</span>
+</header>
+
+<main>
+
+  <!-- Overview -->
+  <div class="card">
+    <h2><span class="icon">👋</span> Overview</h2>
+    <p>
+      Splito ("we", "us", or "our") is a personal finance app that helps you split bills and shared
+      expenses with friends. This Privacy Policy explains how we handle information when you use the
+      Splito mobile application ("App").
+    </p>
+    <div class="highlight">
+      Splito does <strong>not</strong> require you to create an account, and all your expense data
+      is stored <strong>locally on your device only</strong>. We do not have servers that store your
+      personal information.
+    </div>
+  </div>
+
+  <!-- Camera Permission -->
+  <div class="card">
+    <h2><span class="icon">📷</span> Camera Permission</h2>
+    <p>
+      The App requests access to your device's <strong>camera</strong> solely to let you scan
+      physical receipts. When you tap "Scan Receipt," the camera captures an image of the receipt
+      so the App can read the items and amounts.
+    </p>
+    <ul>
+      <li>Camera images are processed <strong>on-device</strong> and are never uploaded to our servers.</li>
+      <li>Receipt images are not stored permanently; they are used only during the active scanning session.</li>
+      <li>You can deny or revoke the camera permission at any time in your device's Settings without losing existing expense data.</li>
+    </ul>
+  </div>
+
+  <!-- Information We Collect -->
+  <div class="card">
+    <h2><span class="icon">📦</span> Information We Collect</h2>
+    <p>We collect only what is necessary for the App to function:</p>
+    <ul>
+      <li>
+        <strong>Expense data you enter</strong> (amounts, descriptions, participant names) –
+        stored locally on your device using SQLite; never transmitted to us.
+      </li>
+      <li>
+        <strong>App preferences</strong> (theme setting, onboarding status) –
+        stored locally using SharedPreferences.
+      </li>
+      <li>
+        <strong>Receipt images</strong> – used transiently during scanning; not persisted.
+      </li>
+      <li>
+        <strong>Files you choose to import</strong> (PDF receipts from your storage) –
+        read locally only; not uploaded.
+      </li>
+    </ul>
+    <p>We do <strong>not</strong> collect names, email addresses, phone numbers, or any
+    personally identifiable information.</p>
+  </div>
+
+  <!-- Advertising (AdMob) -->
+  <div class="card">
+    <h2><span class="icon">📢</span> Advertising (Google AdMob)</h2>
+    <p>
+      Splito shows ads provided by <strong>Google AdMob</strong>. AdMob may collect certain
+      information automatically to serve personalized or non-personalized ads, including:
+    </p>
+    <ul>
+      <li>Advertising ID (a resettable, anonymous identifier)</li>
+      <li>Approximate location (derived from IP address)</li>
+      <li>Device type, OS version, and language</li>
+      <li>App interaction signals (e.g., ad clicks, impressions)</li>
+    </ul>
+    <p>
+      This data is collected and processed by Google under their own privacy policy.
+      You can learn more and opt out of personalized ads at
+      <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">
+        policies.google.com/technologies/ads
+      </a>.
+    </p>
+    <p>
+      On Android, you can reset or limit ad tracking in <em>Settings → Google → Ads</em>.
+    </p>
+  </div>
+
+  <!-- Third-Party Services -->
+  <div class="card">
+    <h2><span class="icon">🔗</span> Third-Party Services</h2>
+    <p>Splito integrates the following third-party SDKs:</p>
+    <ul>
+      <li>
+        <strong>Google AdMob</strong> – advertising.
+        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacy Policy</a>
+      </li>
+      <li>
+        <strong>CunningDocumentScanner</strong> – on-device document scanning (no data leaves the device).
+      </li>
+    </ul>
+    <p>We do not integrate analytics SDKs, crash reporting tools, or any other tracking services.</p>
+  </div>
+
+  <!-- Data Sharing -->
+  <div class="card">
+    <h2><span class="icon">🚫</span> We Do Not Sell Your Data</h2>
+    <p>
+      We do <strong>not</strong> sell, rent, trade, or otherwise transfer any information about
+      you to third parties. Your expense data never leaves your device.
+    </p>
+    <p>
+      The only third party that may receive data is Google AdMob, solely for the purpose
+      of displaying ads, as described above.
+    </p>
+  </div>
+
+  <!-- Children -->
+  <div class="card">
+    <h2><span class="icon">👦</span> Children's Privacy</h2>
+    <p>
+      Splito is not directed to children under the age of 13. We do not knowingly collect
+      personal information from children. If you believe a child has provided us with personal
+      information, please contact us so we can delete it.
+    </p>
+  </div>
+
+  <!-- Data Retention -->
+  <div class="card">
+    <h2><span class="icon">🗄️</span> Data Retention & Deletion</h2>
+    <p>
+      All expense data is stored locally on your device. You can delete all App data at any
+      time by uninstalling the App or clearing the App's data in your device's Settings.
+      This permanently removes all stored information.
+    </p>
+  </div>
+
+  <!-- Security -->
+  <div class="card">
+    <h2><span class="icon">🔒</span> Security</h2>
+    <p>
+      Because your data is stored locally, it is protected by your device's own security
+      mechanisms (screen lock, device encryption). We recommend keeping your device's OS
+      updated and using a strong screen lock.
+    </p>
+  </div>
+
+  <!-- Changes -->
+  <div class="card">
+    <h2><span class="icon">🔄</span> Changes to This Policy</h2>
+    <p>
+      We may update this Privacy Policy from time to time. We will notify you of material
+      changes by updating the "Last updated" date at the top of this page. Continued use of
+      the App after changes constitutes acceptance of the revised policy.
+    </p>
+  </div>
+
+  <!-- Contact -->
+  <div class="card">
+    <h2><span class="icon">✉️</span> Contact Us</h2>
+    <p>
+      If you have any questions, concerns, or requests regarding this Privacy Policy or your
+      data, please contact us at:
+    </p>
+    <p>
+      <strong>Email:</strong>
+      <a href="mailto:techlabs.contact@gmail.com">techlabs.contact@gmail.com</a>
+    </p>
+    <p>
+      <strong>App:</strong> Splito – Split bills. Share fairly.<br />
+      <strong>Developer:</strong> TechLabs
+    </p>
+  </div>
+
+</main>
+
+<footer>
+  <p>© 2025 <strong>TechLabs</strong> · Splito App · All rights reserved.</p>
+  <p style="margin-top:6px;">This policy applies to the Splito mobile application (Android).</p>
+</footer>
+
+</body>
+</html>
